@@ -2,6 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!-- Declare an imported UTI for com.intel.hex -->
+    <key>UTImportedTypeDeclarations</key>
+    <array>
+	<dict>
+	<key>UTTypeIdentifier</key>
+	<string>com.intel.hex</string>
+	<key>UTTypeReferenceURL</key>
+	<string>http://en.wikipedia.org/wiki/Intel_HEX</string>
+	<key>UTTypeDescription</key>
+	<string>Intel Hex</string>
+	<key>UTTypeIconFile</key>
+	<string>public.text.icns</string>
+	<key>UTTypeConformsTo</key>
+	<array>
+	    <string>public.plain-text</string>
+	</array>
+	<key>UTTypeTagSpecification</key>
+	<dict>
+	    <key>public.filename-extension</key>
+	    <array>
+		<string>hex</string>
+	    </array>
+	</dict>
+	</dict>
+    </array>
+
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDocumentTypes</key>
@@ -11,7 +37,7 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>SUPPORTED_UTI_TYPE</string>
+				<string>com.intel.hex</string>
 			</array>
 		</dict>
 	</array>
