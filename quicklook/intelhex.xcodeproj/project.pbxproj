@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.c */; };
-		61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.c */; };
+		153C595810EEB51500AA59C0 /* intelhex.cc in Sources */ = {isa = PBXBuildFile; fileRef = 153C595710EEB51500AA59C0 /* intelhex.cc */; };
+		153C597C10EEB7F300AA59C0 /* intelhex.h in Headers */ = {isa = PBXBuildFile; fileRef = 153C597B10EEB7F300AA59C0 /* intelhex.h */; };
+		2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.cc */; };
+		61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.cc in Sources */ = {isa = PBXBuildFile; fileRef = 61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.cc */; };
 		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
@@ -21,8 +23,10 @@
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08FB77B6FE84183AC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
-		2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
-		61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		153C595710EEB51500AA59C0 /* intelhex.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = intelhex.cc; path = ../lib/intelhex/src/intelhex.cc; sourceTree = SOURCE_ROOT; };
+		153C597B10EEB7F300AA59C0 /* intelhex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = intelhex.h; path = ../lib/intelhex/include/intelhex.h; sourceTree = SOURCE_ROOT; };
+		2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneratePreviewForURL.cc; sourceTree = "<group>"; };
+		61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GenerateThumbnailForURL.cc; sourceTree = "<group>"; };
 		8D576316048677EA00EA77CD /* intelhex.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = intelhex.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
@@ -59,6 +63,8 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				153C597B10EEB7F300AA59C0 /* intelhex.h */,
+				153C595710EEB51500AA59C0 /* intelhex.cc */,
 				F28CFC020A3EC0C6000ABFF5 /* QuickLook.framework */,
 				F28CFBFC0A3EC0AF000ABFF5 /* ApplicationServices.framework */,
 				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
@@ -79,8 +85,8 @@
 		08FB77AFFE84173DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.c */,
-				2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.c */,
+				61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.cc */,
+				2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.cc */,
 				08FB77B6FE84183AC02AAC07 /* main.c */,
 			);
 			name = Source;
@@ -101,6 +107,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153C597C10EEB7F300AA59C0 /* intelhex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D576312048677EA00EA77CD /* main.c in Sources */,
-				2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.c in Sources */,
-				61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.c in Sources */,
+				2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.cc in Sources */,
+				61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.cc in Sources */,
+				153C595810EEB51500AA59C0 /* intelhex.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
